@@ -10,9 +10,9 @@
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-         if(list1 == null && list2 == null){
-            return null;
-        }
+        //  if(list1 == null && list2 == null){
+        //     return null;
+        // }
         ListNode temp = new ListNode(-1);
         ListNode head = temp;
         while(list1 != null && list2 != null){
