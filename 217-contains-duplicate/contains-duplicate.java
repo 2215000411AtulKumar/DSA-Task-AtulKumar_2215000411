@@ -4,13 +4,16 @@ class Solution {
         for(int i=0; i<nums.length; i++){
             set.add(nums[i]);
         }
-        // if(set.size()==nums.length){
-        //     return false;
-        // }
-        // else{
-        //     return true;
-        // }
-        return set.size()!=nums.length;
+        for(int i=0; i<nums.length; i++){
+            if(set.contains(nums[i])){
+                set.remove(nums[i]);
+            }
+            else{
+                return true;
+            }
+        }
+        return false;
+
 
     }
 }
