@@ -8,14 +8,14 @@ class Solution {
         
         if(sum % 3 != 0) return false;
 
-        int sumForEachPart = sum / 3, temp = 0, found = 0;
+        int sumForEachPart = sum / 3, tempSum = 0, found = 0;
 
         for(int i = 0; i<arr.length; i++){
-            temp += arr[i];
+            tempSum += arr[i];
 
-            if(temp == sumForEachPart){
+            if(tempSum == sumForEachPart){
                 found++;
-                temp = 0;
+                tempSum = 0;
             }
         }
 
